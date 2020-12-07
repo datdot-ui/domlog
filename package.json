@@ -1,0 +1,39 @@
+{
+  "name": "ui-domlog",
+  "version": "0.0.0",
+  "description": "Debug log for console.log() to display on the body's DOMElement, and trace every action from UI component/module.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "budo demo/demo.js:bundle.js --open --live",
+    "build": "browserify demo/demo.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fionataeyang/ui-domlog.git"
+  },
+  "keywords": [
+    "domglog",
+    "deubg",
+    "log",
+    "log",
+    "ui",
+    "log",
+    "playproject"
+  ],
+  "author": "fionataeyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fionataeyang/ui-domlog/issues"
+  },
+  "homepage": "https://github.com/fionataeyang/ui-domlog#readme",
+  "dependencies": {
+    "bel": "^6.0.0",
+    "csjs-inject": "^1.0.1",
+    "datdot-ui-button": "github:fionataeyang/datdot-ui-button"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "budo": "^11.6.4"
+  }
+}
