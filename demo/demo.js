@@ -8,15 +8,15 @@ const filename = path.basename(__filename)
 function demoComponent() {
     let recipients = []
     // Demo init log
-    const log = domlog({page: 'demo', from: 'demo', flow: 'ui-domlog', type: 'init', filename, line: 11})
+    const log = domlog({page: 'demo', from: 'demo', flow: 'ui-domlog', type: 'init', body: 'ready', filename, line: 11})
     // elements
-    const click1 = button({page: 'dmeo', name: 'click1', content: 'Click1', style: 'solid', color: 'white'}, protocol('click1'))
-    const click2 = button({page: 'dmeo', name: 'click2', content: 'Click2', style: 'solid', color: 'dark'}, protocol('click2'))
+    const cancel = button({page: 'dmeo', name: 'cancel', content: 'Cancel', style: 'solid', color: 'white'}, protocol('cancel'))
+    const confirm = button({page: 'dmeo', name: 'confirm', content: 'Confirm', style: 'solid', color: 'dark'}, protocol('confirm'))
     // content
     const content = bel`
     <div class=${css.content}>
         <h1>UI Domlog Demo</h1>
-        <div>${click1} ${click2}</div>
+        <div>${cancel} ${confirm}</div>
     </div>`
     // show logs
     let terminal = bel`<div class=${css.terminal}></div>`

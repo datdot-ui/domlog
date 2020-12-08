@@ -46,7 +46,16 @@ const css = csjs`
 }
 .code-line {}
 .error {
-    color: #FF3F3F;
+    
+}
+.error .type {
+    padding: 2px 6px;
+    color: white;
+    background-color: #AC0000;
+    border-radius: 2px;
+}
+.error .info {
+    color: #FF2626;
 }
 .page {
     display: inline-block;
