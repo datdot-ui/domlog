@@ -8,7 +8,7 @@ const filename = path.basename(__filename)
 function demoComponent() {
     let recipients = []
     // Demo init log
-    const log = domlog({page: 'demo', from: 'demo', flow: 'ui-domlog', type: 'error', body: 'something went wrong', filename, line: 11})
+    const log = domlog({page: 'demo', from: 'demo', flow: 'ui-domlog', type: 'init', body: 'ready', filename, line: 11})
     // elements
     const cancel = button({page: 'dmeo', name: 'cancel', content: 'Cancel', style: 'solid', color: 'white'}, protocol('cancel'))
     const confirm = button({page: 'dmeo', name: 'confirm', content: 'Confirm', style: 'solid', color: 'dark'}, protocol('confirm'))
