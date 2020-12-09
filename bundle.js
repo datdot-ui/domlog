@@ -12,8 +12,8 @@ function demoComponent() {
     // Demo init log
     const log = domlog({page: 'demo', from: 'demo', flow: 'ui-domlog', type: 'init', body: 'ready', filename, line: 11})
     // elements
-    const cancel = button({page: 'dmeo', name: 'cancel', content: 'Cancel', style: 'solid', color: 'white'}, protocol('cancel'))
-    const confirm = button({page: 'dmeo', name: 'confirm', content: 'Confirm', style: 'solid', color: 'dark'}, protocol('confirm'))
+    const cancel = button({page: 'demo', flow: 'panel', name: 'cancel', content: 'Cancel', style: 'solid', color: 'white'}, protocol('cancel'))
+    const confirm = button({page: 'demo', flow: 'panel', name: 'confirm', content: 'Confirm', style: 'solid', color: 'dark'}, protocol('confirm'))
     // content
     const content = bel`
     <div class=${css.content}>
@@ -841,10 +841,10 @@ const filename = path.basename(__filename)
 
 module.exports = button
 
-function button ({page, name, content, style, color, custom, current, disabled = false}, protocol) {
+function button ({page, flow = null, name, content, style, color, custom, current, disabled = false}, protocol) {
     const widget = 'ui-button'
     const send2Parent = protocol( receive )
-    send2Parent({page, from: name, flow: widget, type: 'init', filename, line: 11})
+    send2Parent({page, from: name, flow: flow ? `${flow}/${widget}` : widget, type: 'init', filename, line: 11})
     
     let button = bel`<button role="button" class="${css.btn} ${ checkStyle() } ${color ? css[color] : ''} ${custom ? custom.join(' ') : ''} ${current ? css.current : '' }" name=${name} aria-label=${name} disabled=${disabled}>${content}</button>`
     button.onclick = click
@@ -873,7 +873,7 @@ function button ({page, name, content, style, color, custom, current, disabled =
         button.append(ripple)
         setTimeout( () => { ripple.remove() }, 600)
 
-        send2Parent({page, from: name, flow: widget, type: 'click', filename, line: 40})
+        send2Parent({page, from: name, flow: flow ? `${flow}/${widget}` : widget, type: 'click', filename, line: 40})
     }
 
     function receive(message) {

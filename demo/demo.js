@@ -10,8 +10,8 @@ function demoComponent() {
     // Demo init log
     const log = domlog({page: 'demo', from: 'demo', flow: 'ui-domlog', type: 'init', body: 'ready', filename, line: 11})
     // elements
-    const cancel = button({page: 'dmeo', name: 'cancel', content: 'Cancel', style: 'solid', color: 'white'}, protocol('cancel'))
-    const confirm = button({page: 'dmeo', name: 'confirm', content: 'Confirm', style: 'solid', color: 'dark'}, protocol('confirm'))
+    const cancel = button({page: 'demo', flow: 'panel', name: 'cancel', content: 'Cancel', style: 'solid', color: 'white'}, protocol('cancel'))
+    const confirm = button({page: 'demo', flow: 'panel', name: 'confirm', content: 'Confirm', style: 'solid', color: 'dark'}, protocol('confirm'))
     // content
     const content = bel`
     <div class=${css.content}>
