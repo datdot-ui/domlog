@@ -1,0 +1,150 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "ui-domlog",
+      "version": "0.0.0-prealpha",
+      "description": "Debug log for console.log() to display on the body's DOMElement, and trace every action from UI component/module.",
+      "main": "src/index.js",
+      "scripts": {
+        "start": "budo demo/demo.js:bundle.js --open --live",
+        "build": "browserify demo/demo.js -o bundle.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/datdot-ui/domlog.git"
+      },
+      "keywords": [
+        "domglog",
+        "deubg",
+        "log",
+        "log",
+        "ui",
+        "log",
+        "playproject"
+      ],
+      "author": "fionataeyang",
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/datdot-ui/domlog/issues"
+      },
+      "homepage": "https://github.com/datdot-ui/domlog#readme",
+      "dependencies": {
+        "bel": "^6.0.0",
+        "csjs-inject": "^1.0.1",
+        "datdot-ui-button": "^0.0.0-prealpha"
+      },
+      "devDependencies": {
+        "browserify": "^17.0.0",
+        "budo": "^11.6.4"
+      }
+    },
+    "prefix": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/ninabreznik/.pnpm-store/v3",
+    "virtualStoreDir": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/csjs-inject/1.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "csjs-inject",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/csjs-inject/1.0.1",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "resolved"
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/csjs-inject/1.0.1",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "found_in_store"
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/budo/11.7.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "budo",
+      "rawSpec": "^11.6.4"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/budo/11.7.0",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "resolved"
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/budo/11.7.0",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "found_in_store"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/browserify/17.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "browserify",
+      "rawSpec": "^17.0.0"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/browserify/17.0.0",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/browserify/17.0.0",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bel/6.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "bel",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "14 debug pnpm:deprecation": {
+    "deprecated": "Renamed to 'nanohtml'. 'npm install nanohtml'",
+    "depth": 0,
+    "pkgId": "registry.npmjs.org/bel/6.0.0",
+    "pkgName": "bel",
+    "pkgVersion": "6.0.0",
+    "prefix": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog"
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bel/6.0.0",
+    "requester": "/home/ninabreznik/Documents/code/play/datdot/ui/domlog",
+    "status": "resolved"
+  },
+  "16 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "datdot-ui-button is not in the npm registry, or you have no permission to fetch it.\n\nAn authorization header was used: Bearer npm_[hidden]",
+    "request": {
+      "authHeaderValue": "Bearer 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",
+      "url": "https://registry.npmjs.org/datdot-ui-button"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "datdot-ui-button",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/datdot-ui-button: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/datdot-ui-button: Not Found - 404\n    at RetryOperation._fn (/home/ninabreznik/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:85663:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

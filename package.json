@@ -1,6 +1,6 @@
 {
   "name": "ui-domlog",
-  "version": "0.0.0",
+  "version": "0.0.0-prealpha",
   "description": "Debug log for console.log() to display on the body's DOMElement, and trace every action from UI component/module.",
   "main": "src/index.js",
   "scripts": {
